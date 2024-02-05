@@ -11,12 +11,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
 export default {
-    components: { Content, Header, Footer },
-    data: function () {
-        return {};
-    },
-    mounted() {},
-    methods: {},
+    components: { Content, Header, Footer }
 };
 </script>  
 <style scoped></style>
