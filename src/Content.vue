@@ -1,10 +1,11 @@
 <template>
     <div class="mt-3" style="min-height: 85vh;">
         <h1 class="text-center">All {{ recipes.length }} Recipes</h1>
-        <RecipesIndex :recipes="recipes" @setRecipe="setRecipeModal($event)"/>
+        <RecipesIndex v-bind:recipes="recipes" @setRecipe="setRecipeModal($event)"/>
         <Modal :recipe="recipe" :show="show" @close="show = false" />
     </div>
 </template>
+
 <script>
 import axios from 'axios';
 import RecipesIndex from './components/RecipesIndex.vue';
